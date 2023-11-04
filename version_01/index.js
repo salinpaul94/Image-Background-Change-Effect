@@ -9,4 +9,5 @@ let x = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / (1000));
 
   document.getElementById("days").innerHTML = days;
+  document.getElementById("hours").innerHTML = hours;
 }, 1000);
