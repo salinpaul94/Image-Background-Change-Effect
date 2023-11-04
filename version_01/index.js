@@ -10,4 +10,5 @@ let x = setInterval(function () {
 
   document.getElementById("days").innerHTML = days;
   document.getElementById("hours").innerHTML = hours;
+  document.getElementById("minutes").innerHTML = minutes;
 }, 1000);
