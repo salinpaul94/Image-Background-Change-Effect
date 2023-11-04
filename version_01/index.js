@@ -10,7 +10,7 @@ let x = setInterval(function () {
 
   document.getElementById("days").innerHTML = days > 9 ? days : `0${days}`;
   document.getElementById("hours").innerHTML = hours > 9 ? hours : `0${hours}`;
-  document.getElementById("minutes").innerHTML = minutes;
+  document.getElementById("minutes").innerHTML = minutes > 9 ? minutes : `0${minutes}`;
   document.getElementById("seconds").innerHTML = seconds;
 
   if (distance < 0) {
