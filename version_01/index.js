@@ -1,4 +1,4 @@
-let countDownDate = new Date("Nov 6, 2023 20:53:00").getTime();
+let countDownDate = new Date("Nov 4, 2023 21:59:00").getTime();
 let x = setInterval(function () {
   let now = new Date().getTime();
   let distance = countDownDate - now;
@@ -9,7 +9,7 @@ let x = setInterval(function () {
   let seconds = Math.floor((distance % (1000 * 60)) / (1000));
 
   document.getElementById("days").innerHTML = days > 9 ? days : `0${days}`;
-  document.getElementById("hours").innerHTML = hours;
+  document.getElementById("hours").innerHTML = hours > 9 ? hours : `0${hours}`;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 
